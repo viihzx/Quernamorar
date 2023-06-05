@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.imagem {
+    display: none;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: block;
+    background-image: url("img/imagem.jpg");
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 100vh;
+}
+
+.container_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_grid {
+    display: grid;
+    row-gap: 1em;
+}
+
+.botaosim {
+    margin: 0 1em 0 1.5em;
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 255);
+    border: solid 1px rgb(230, 18, 54);
+    color: white;
+    cursor: pointer;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    white-space: nowrap;
+}
+
+.btn {
+    border-radius: 5px;
+    margin-left: 4em;
+}
+
+.botao{
+    position: absolute;
+    padding: 10px 20px;
+    background-color: rgb(255, 8, 29);
+    border: solid 1px rgb(99, 6, 6);
+    color: #fff;
+    cursor: pointer;
+}
